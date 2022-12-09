@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Supreme', sans-serif;
+  }
+}
+
+@font-face {
+  font-family: 'Supreme';
+  src: local('Supreme'),
+    url('../src/assets/fonts/Supreme-Bold.otf') format('truetype');
+  src: local('Supreme'),
+    url('../src/assets/fonts/Supreme-BoldItalic.otf') format('truetype');
+  src: local('Supreme'),
+    url('../src/assets/fonts/Supreme-Extrabold.otf') format('truetype');
+  src: local('Supreme'),
+    url('../src/assets/fonts/Supreme-ExtraboldItalic.otf') format('otf');
+  src: local('Supreme'),
+    url('./assets/fonts/Supreme-Extralight.otf') format('truetype');
+  src: local('Supreme'),
+    url('./assets/fonts/Supreme-ExtralightItalic.otf') format('truetype');
+  src: local('Supreme'),
+    url('./assets/fonts/Supreme-Italic.otf') format('truetype');
+  src: local('Supreme'),
+    url('./assets/fonts/Supreme-Light.otf') format('truetype');
+  src: local('Supreme'),
+    url('./assets/fonts/Supreme-LightItalic.otf') format('truetype');
+  src: local('Supreme'),
+    url('./assets/fonts/Supreme-Medium.otf') format('truetype');
+  src: local('Supreme'),
+    url('./assets/fonts/Supreme-MediumItalic.otf') format('truetype');
+  src: local('Supreme'),
+    url('./assets/fonts/Supreme-Regular.otf') format('truetype');
+  src: local('Supreme'),
+    url('./assets/fonts/Supreme-Thin.otf') format('truetype');
+  src: local('Supreme'),
+    url('./assets/fonts/Supreme-ThinItalic.otf') format('truetype');
+}
+@font-face {
+  font-family: 'Ubuntu';
+  src: local('Ubuntu'),
+    url('../src/assets/fonts/Ubuntu-Bold.ttf') format('truetype');
+  src: local('Ubuntu'),
+    url('../src/assets/fonts/Ubuntu-BoldItalic.ttf') format('truetype');
+  src: local('Ubuntu'),
+    url('./assets/fonts/Ubuntu-Italic.ttf') format('truetype');
+  src: local('Ubuntu'),
+    url('./assets/fonts/Ubuntu-Light.ttf') format('truetype');
+  src: local('Ubuntu'),
+    url('./assets/fonts/Ubuntu-LightItalic.ttf') format('truetype');
+  src: local('Ubuntu'),
+    url('./assets/fonts/Ubuntu-Medium.ttf') format('truetype');
+  src: local('Ubuntu'),
+    url('./assets/fonts/Ubuntu-MediumItalic.ttf') format('truetype');
+  src: local('Ubuntu'),
+    url('./assets/fonts/Ubuntu-Regular.ttf') format('truetype');
+}
+
+.imgtrans {
+  transition: all 0.2s ease-in-out;
+}
+/* .imgCons {
+  animation-name: example;
+  animation-duration: 5.5s;
+} */
+/* @keyframes example {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+} */
+.hiddenImp {
+  display: none !important;
+}
+
+.flexImp {
+  display: flex !important;
+}

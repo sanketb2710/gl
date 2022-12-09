@@ -1,0 +1,250 @@
+.embla {
+  position: relative;
+  /* background-color: green; */
+  /* padding: 20px; */
+  /* max-width: 670px; */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.embla__viewport {
+  overflow: hidden;
+  width: 100%;
+}
+
+.embla__viewport.is-draggable {
+  cursor: move;
+  cursor: grab;
+}
+
+.embla__viewport.is-dragging {
+  cursor: grabbing;
+}
+
+.embla__container {
+  display: flex;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.embla__slide {
+  position: relative;
+  min-width: 33.33%;
+  padding-left: 5px;
+}
+
+.embla__slide__inner {
+  position: relative;
+  /* overflow: hidden; */
+  /* height: 190px; */
+}
+
+.embla__slide__box {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  min-height: 100%;
+  min-width: 100%;
+  max-width: none;
+  transform: translate(-50%, -50%);
+}
+.embla__slide__img {
+  /* position: absolute; */
+  /* display: block; */
+  /* top: 50%; */
+  /* left: 50%; */
+  /* width: auto; */
+  /* min-height: 100%; */
+  /* min-width: 100%; */
+  /* max-width: none; */
+  transform: translate(-0%, -0%);
+}
+.embla__button {
+  outline: 0;
+  cursor: pointer;
+  background-color: transparent;
+  touch-action: manipulation;
+  position: absolute;
+  z-index: 1;
+  top: -23%;
+  transform: translateY(-50%);
+  border: 0;
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  fill: #1bcacd;
+  padding: 0;
+}
+
+.embla__button:disabled {
+  cursor: default;
+  opacity: 0.3;
+}
+
+.embla__button__svg {
+  width: 100%;
+  height: 100%;
+}
+
+.embla__button--prev {
+  right: 60px;
+  /* top: 0; */
+}
+
+.embla__button--next {
+  right: 10px;
+  /* top: 0; */
+}
+
+.embla__dots {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.embla__dot {
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  width: 30px;
+  height: 30px;
+  margin-right: 7.5px;
+  margin-left: 7.5px;
+  display: flex;
+  align-items: center;
+}
+
+.embla__dot:after {
+  background-color: #efefef;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  content: '';
+}
+
+.embla__dot.is-selected:after {
+  background-color: #1bcacd;
+  opacity: 1;
+}
+
+.embla--thumb {
+  padding-top: 0;
+  margin-top: -12px;
+}
+
+.embla__container--thumb {
+  cursor: default;
+  margin-left: -8px;
+}
+
+.embla__slide--thumb {
+  padding-left: 8px;
+  min-width: 20%;
+}
+
+.embla__slide__inner--thumb {
+  touch-action: manipulation;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  margin: 0;
+  padding: 0;
+  height: 100px;
+  width: 100%;
+  background-color: transparent;
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+.embla__slide__thumbnail {
+  position: absolute;
+  opacity: 0.2;
+  top: 0;
+  bottom: 0;
+  left: -10000%;
+  right: -10000%;
+  margin: auto;
+  min-width: 1000%;
+  min-height: 1000%;
+  max-width: none;
+  transform: scale(0.1);
+  transition: opacity 0.2s;
+}
+
+.embla__slide--thumb.is-selected .embla__slide__thumbnail {
+  opacity: 1;
+}
+
+.embla__progress {
+  position: relative;
+  background-color: #f4f4f4;
+  margin-top: 20px;
+  width: calc(100% - 10px);
+  height: 2px;
+  overflow: hidden;
+  border-radius: 2px;
+}
+
+.embla__progress__bar {
+  position: absolute;
+  background-color: #697586;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: -100%;
+}
+.embla__button__productDetail--next {
+  top: 35%;
+  right: 0%;
+}
+.embla__button__productDetail--prev {
+  top: 35%;
+  left: -2%;
+}
+@media only screen and (max-width: 1409px) and (min-width: 968px) {
+  .embla__slide {
+    min-width: 50%;
+  }
+  .embla__slide__inner {
+    position: relative;
+    align-items: center;
+    display: flex;
+    /* overflow: hidden; */
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 968px) and (min-width: 320px) {
+  .embla__slide {
+    min-width: 100%;
+  }
+  .embla__slide__inner {
+    position: relative;
+    align-items: center;
+    display: flex;
+    /* overflow: hidden; */
+    justify-content: center;
+  }
+  .embla__button {
+    top: -19%;
+  }
+  .embla__slide {
+    padding-left: 0px;
+  }
+  /* .embla__button--prev {
+    right: 23px;
+  }
+  .embla__button--next {
+    right: -16px;
+  } */
+}
